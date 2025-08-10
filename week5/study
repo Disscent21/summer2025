@@ -1,1 +1,14 @@
+캐릭터를 불러오기 위해 먼저 캐릭터 이미지를 찾아야 했다.
+브라우저 기반 픽셀 이미지 생성기를 사용해 16×16 크기의 이미지를 만들고 PNG 형식으로 저장했다.
+그리고 down1, down2, left1, left2, right1, right2, up1, up2 총 8개의 이미지를 제작했다.
+이미지를 불러오는 과정에서java.lang.IllegalArgumentException: input == null! 라는 오류가 발생했다.
+아직 문제를 해결하지 못했지만 스프라이트 이미지를 프로그램이 읽지 못할 때 발생하는 오류인 것 같다.
+인터넷에서 이미지를 제대로 불러왔는지 확인하는 방법을 찾았다. 
+System.out.println("Image loading started");
+// load sprite images...
+// load sprite images...
+System.out.println("Image loading ended");
 
+콘솔에 두 번째 메시지가 출력되면 이미지 로딩이 정상적으로 완료된 것이다.
+하지만 첫 번째 메시지만 출력되면 로딩 중에 문제가 발생하여 프로그램이 그 지점에서 멈췄다는 의미다.
+다음 주에는 이 문제를 해결해 볼 예정이다.
